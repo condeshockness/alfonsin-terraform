@@ -147,7 +147,7 @@ variable "ipv4_gateway" {
 variable "ipv6_address" {
   description = "Defaults to DHCP, for static IPv6 address set CIDR."
   type        = string
-  default     = "dhcp"
+  default     = "manual"
 }
 
 variable "ipv6_gateway" {
