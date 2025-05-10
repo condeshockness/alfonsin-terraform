@@ -166,7 +166,7 @@ variable "mac" {
 variable "dns_domain" {
   description = "Defaults to using PVE host setting."
   type        = string
-  default     = "getc.online"
+  default     = "alfonsin.shop"
 }
 
 variable "dns_server" {
