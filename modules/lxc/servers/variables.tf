@@ -181,6 +181,5 @@ variable "user_password" {
   description = "Password for LXC user."
   type        = string
   sensitive   = true
-  #default     = null
-  default     = "123456"
+  default     = null
 }
