@@ -175,18 +175,7 @@ variable "dns_server" {
   default     = "null"
 }
 
-## Default User Variables
-variable "user_ssh_key_public" {
-  description = "Public SSH Key for LXC user."
-  default     = null
-  #default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBgXYoz7pCRQ5LcwHRn0andCTvN+lpfmj2mUOD7C2wqg alfonsin.nuvem@gmail.com"
-  type        = string
-  sensitive   = true
-  validation {
-    condition     = can(regex("(?i)PRIVATE", var.user_ssh_key_public)) == false
-    error_message = "Error: Private SSH Key."
-  }
-}
+
 
 variable "user_password" {
   description = "Password for LXC user."
