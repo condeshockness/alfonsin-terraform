@@ -21,7 +21,7 @@ resource "proxmox_lxc" "lxc" {
   memory          = var.memory
   swap            = var.memory_swap
   password        = var.user_password
-  #ssh_public_keys = (var.user_ssh_key_public != null ? file("${var.user_ssh_key_public}") : null)
+  ssh_public_keys = (var.user_ssh_key_public != null ? file("${var.user_ssh_key_public}") : null)
 
   rootfs {
     storage = var.disk_storage
