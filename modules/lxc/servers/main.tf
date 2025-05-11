@@ -23,7 +23,7 @@ resource "proxmox_lxc" "lxc" {
   password        = var.user_password
 
   ssh_public_keys = <<-EOT
-    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBgXYoz7pCRQ5LcwHRn0andCTvN+lpfmj2mUOD7C2wqg alfonsin.nuvem@gmail.com
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHeiPMi0EMorqWZcE1FIy2ZExE3if5WMi5+HYfAkUZRH root@ufl
   EOT
 
   rootfs {

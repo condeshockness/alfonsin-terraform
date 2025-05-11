@@ -129,8 +129,8 @@ variable "vnic_bridge" {
 variable "vlan_tag" {
   description = "Networking adapter VLAN tag."
   type        = number
-  default     = 0
-  #default     = null
+  #default     = 1
+  default     = null
 }
 
 variable "ipv4_address" {
